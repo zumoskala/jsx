@@ -1,17 +1,17 @@
+// Import the React and ReactDOM libraries
+//'React' knows what a component is and how to make components work together.
+//'ReactDOM' knows how to take a component and make it show up in the DOM
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+// Create a React Component
+// A component can be a function or a class
+const App = function () {
+    return <div>Hi there!</div>;
+};
+
+// Take the React Component and show it on the screen
+ReactDOM.render (
+    <App/>,
+    document.querySelector('#root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
