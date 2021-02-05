@@ -7,11 +7,18 @@ import ReactDOM from 'react-dom';
 // Create a React Component
 // A component can be a function or a class
 const App = function () {
-    return <div>Hi there!</div>;
+    return (
+        <div className="div">
+            <label className="label" htmlFor="name">Enter name:</label>
+            <input type="text" name="" id="name"/>
+            <button style="background-color: blue; color: white;">Submit</button>
+        </div>
+    );
 };
 
 // Take the React Component and show it on the screen
 ReactDOM.render (
-    <App/>,
-    document.querySelector('#root')
+    <App/>
+,
+document.querySelector('#root')
 );
